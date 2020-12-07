@@ -13,8 +13,25 @@ h1{
     animation-name: animasi_kotak;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    margin-right: 100px;
 }
 @keyframes animasi_kotak{
     from{ background: blue;}
     to{background: red;}
+}
+.lingkaran{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation-name: geser;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes geser{
+    0%   {box-shadow: 0 0 20px rgba(105,123,171,1);}
+    25%  {box-shadow: 0 0 20px rgba(105,169,171,1);}
+    50%  {box-shadow: 0 0 20px rgba(106,171,105,1);}
+    75%  {box-shadow: 0 0 20px rgba(55,134,220,1);}
+    100% {box-shadow: 0 0 20px rgba(205,95,81,1);}
 }
