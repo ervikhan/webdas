@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dialog Confirm</title>
+</head>
+<body>
+    <b>Hai kawan, saya ervik, saya sedang belajar javascript dasar. <br> <button onclick="fungsiku()">Klik Disini</button> Jika ingin mengunjungi blog saya</b>
+    <script>
+        // fungsi js (jika button di klik)
+        function fungsiku(){
+            var konfirmasi = confirm("Ingin Mengunjungi Blogku? (Wawasan Dunia Blog)");
+            // kondisi pilikan
+            if (konfirmasi){
+                window.location = "http://www.ervikhan.blogspot.com";
+            } else {
+                document.write("Anda tidak jadi mengunjungi");
+            }
+        }
+    </script>
+</body>
+</html>
