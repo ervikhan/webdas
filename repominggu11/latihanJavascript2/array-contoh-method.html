@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    <script>
+        // Method filter
+        const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        document.write(`<h3><b>Array Angka : ${angka}</b></h3>`)
+        // ambil data yang hanya habis dibagi dua
+        const filteredArray = angka.filter(item => item % 2 === 0);
+        document.write(`<p>Filtered Array (Genap) : ${filteredArray}</p>`)
+        console.log(filteredArray)
+
+        // Method Includes
+        var tanaman = ["Padi", "Kacang", "Jagung", "Kedelai"];
+        document.write(`<h3><b>Array Tanaman : ${tanaman}</b></h3>`)
+        // apakah kacang sudah ada di dalam array tanaman?
+        var adaKacang = tanaman.includes("Kacang");
+        document.write("<p>Apakah Ada Kacang?</p> <b>Jawab : </b>")
+        if (adaKacang){
+            document.write("Kacang Ada Di Array")
+        } else {
+            document.write("Tidak Ada Kacang Ada Di Array")
+        }
+        console.log(adaKacang); // -> true
+
+        // apakah bayam ada?
+        var adaBayam = tanaman.includes("Bayam");
+        document.write("<p>Apakah Ada Bayam?</p> <b>Jawab : </b>")
+        if (adaBayam){
+            document.write("Bayam Ada Di Array")
+        } else {
+            document.write("Tidak Ada Bayam Ada Di Array")
+        }
+        console.log(adaBayam); // -> false
+        //Method Short
+        var alfabet = ['a','f','z','e','r','g'];
+        document.write(`<h3><b>Aray Alfabet : ${alfabet}</b></h3>`)
+        var angka2 = [3,1,2,6,8,5];
+        document.write(`<h3><b>Aray Angka2 : ${angka2}</b></h3>`)
+        console.log(alfabet.sort()); //-> ["a", "e", "f", "g", "r", "z"]
+        document.write(`<p>Sorted Alfabet : ${alfabet}</p>`)
+        console.log(angka2.sort()); // -> [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        document.write(`<p>Sorted Angka2 : ${angka2}</p>`)
+    </script>
+</body>
+</html>
