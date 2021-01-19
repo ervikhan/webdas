@@ -1,0 +1,66 @@
+body{
+    background: #35A9DB;
+    font-family: roboto;
+    text-align: center;
+}
+h1{
+    color: #fff;
+}
+.ketengah{
+    margin: 10px auto;
+    width: 1150px;
+}
+.kotak{
+    background: #fcfcfc;
+    padding: 20px;
+    width: 200px;
+    float: left;
+    margin: 20px;
+    height: 200px;
+}
+.kotak1{
+    border-radius: 10px 10px 10px 10px;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes blink{
+    0%{box-shadow: 0 0 20px red;}
+    25%{box-shadow: 0 0 20px white;}
+    50%{box-shadow: 0 0 20px magenta;}
+    75%{box-shadow: 0 0 20px blue;}
+    100%{box-shadow: 0 0 20px red;}
+}
+.kotak2{
+    border-radius: 40px 20px 60px 90px;
+    border: 5px solid grey;
+}
+.kotak3{
+    border-radius: 0 50% 0 50%;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+.kotak4{
+    border-radius: 20%;
+    border: 5px solid lightgreen;
+}
+.kotak5{
+    border-radius: 50% 0 50% 0;
+    border: 5px solid lightpink;
+}
+.kotak6{
+    border-radius: 50%;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+.kotak7{
+    border-radius: 10% 20% 30% 40%;
+    border: 5px solid magenta;
+}
+.kotak8{
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
