@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dialog Prompt</title>
+</head>
+<body>
+    <!-- Output dari prompt dari js -->
+    <div id="name"></div>
+    <script>
+        // prompt berfungsi untuk mengambil sebuah inputan dari pengguna
+        var name = prompt("Masukkan Nama Anda ", "Ketikkan Disini");
+        // deklarasi var name
+        document.getElementById("name").innerHTML = "Hai, Selamat Datang " +name;
+        // atau bisa langsung dengan menggunakan doc write
+        document.write("Hai, Selamat Datang " + name);
+    </script>
+</body>
